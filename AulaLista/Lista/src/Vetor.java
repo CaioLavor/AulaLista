@@ -26,11 +26,11 @@ public class Vetor {
 
     public boolean contem(Aluno aluno){
         int controle = 0;
-        for (Aluno pessoa : alunos) {
-            if (pessoa.equals(aluno)) {
+        for (Aluno pessoa : this.alunos) {
+            if (pessoa!=null && pessoa.equals(aluno)) {
                 controle = 1;
+                break;
             }
-            break;
         }
         if(controle==0){
             return false;
